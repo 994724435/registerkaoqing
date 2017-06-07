@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<include file="Common/header" />
+        <div id="page-wrapper">
+        <div class="graphs">
+	     <div class="xs">
+  	       <h3>日期规则</h3>
+			 <p style="margin-left: 130px;color: red;">请填写考勤的时间段，格式如 "18,19,20,21,22,23,24" ，时间以逗号分隔，下午开始考勤的时间即18:00 </p>
+  	         <div class="tab-content">
+						<div class="tab-pane active" id="horizontal-form">
+							<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+								<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">早上考勤时间点</label>
+									<div class="col-sm-8">
+										<input type="text" name="earlytime" value="{$earlytime.cont}" class="form-control1" id="focusedinput" placeholder="">
+									</div>
+									<div class="col-sm-2">
+										<p class="help-block"></p>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">上午考勤时段</label>
+									<div class="col-sm-8">
+										<input type="text" name="morning" value="{$morning.cont}" class="form-control1" id="focusedinput" placeholder="">
+									</div>
+									<div class="col-sm-2">
+										<p class="help-block"></p>
+									</div>
+								</div>
+								<div class="form-group">
+									<label for="focusedinput" class="col-sm-2 control-label">下午考勤时段</label>
+									<div class="col-sm-8">
+										<input type="text" name="aftern" value="{$aftern.cont}" class="form-control1" id="focusedinput" placeholder="">
+									</div>
+									<div class="col-sm-2">
+										<p class="help-block"></p>
+									</div>
+								</div>
+							      <div class="panel-footer">
+									<div class="row">
+										<div class="col-sm-8 col-sm-offset-2">
+											<button class="btn-success btn">Submit</button>
+										</div>
+									</div>
+								 </div>
+
+								
+							</form>
+						</div>
+					</div>
+
+ 
+	
+  </div>
+  <div class="copy_layout">
+      <p>Copyright &copy; 2016 name All rights reserved.</p>
+  </div>
+  </div>
+      </div>
+      <!-- /#page-wrapper -->
+   </div>
+    <!-- /#wrapper -->
+<!-- Nav CSS -->
+<link href="__ROOT__/Public/admin/css/custom.css" rel="stylesheet">
+<!-- Metis Menu Plugin JavaScript -->
+<script src="__ROOT__/Public/admin/js/metisMenu.min.js"></script>
+<script src="__ROOT__/Public/admin/js/custom.js"></script>
+ <script src="__ROOT__/Public/admin/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,68 @@
+
+
+
+<include file="Common/header" />
+           
+        
+        <div id="page-wrapper">
+        <div class="graphs">	  
+    <div class="content_bottom">
+     <div class="col-md-12 span_3">
+		  <div class="bs-example1" data-example-id="contextual-table">
+		    <table class="table">
+		      <thead>
+		        <tr style="text-align: center;">
+		           <h2>请假列表</h2>
+		        </tr>
+		        <tr>
+		          <th>编号</th>
+					<th>姓名</th>
+		          <th>内容</th>
+		          <th>起始时间</th>
+					<th>结束时间</th>
+					<th>审批人</th>
+		          <th>状态/操作</th>
+		        </tr>
+		      </thead>
+		      <tbody>	      
+		      <?php 
+		      		$i = 1;
+		      	?>
+		      <foreach name="res" item='v'>
+		      
+		      	<?php 
+		      		if(($i%2)==1){
+						echo "<tr class='active'>";
+					}else{
+						echo "<tr class='info'>";
+					}
+		      	?>
+		        
+		          <th scope="row">{$v.id}</th>
+				  <th>{$v.name}</th>
+		          <th>{$v.cont}</th>
+		          <th>{$v.starttime}</th>
+				  <th>{$v.endtime}</th>
+				  <th>{$v.manager}</th>
+				  <td><if condition="$v.state eq 0"><a href='__ROOT__/index.php/Admin/Menber/usermessagecontroll/id/{$v.id}/state/1'>通 过</a>|<a href="__ROOT__/index.php/Admin/Menber/usermessagereson/id/{$v.id}">不通过</a> <elseif condition="$v.state eq 1"/>审批通过<else/>不通过 </if></td>
+		        </tr>
+		      	<?php $i++ ;?>
+		       </foreach>		      
+		      </tbody>
+		    </table>
+		   </div>
+	   </div>
+		<div class="clearfix"> </div>
+	    </div>
+		<div class="copy">
+            <p>Copyright &copy; 2016  All rights reserved.</p>
+	    </div>
+		</div>
+       </div>
+      <!-- /#page-wrapper -->
+   </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="__ROOT__/Public/admin/js/bootstrap.min.js"></script>
+</body>
+</html>

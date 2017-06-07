@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>个人中心</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- loading mui -->
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/mui.min.css">
+	<!-- custorm style -->
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/style.css">
+</head>
+<body>
+<include file="Common/header" />
+	<!-- 主内容部分 -->
+	<div class="content">
+		<section class="xueqi">
+			<div class="class">
+				<label id="classResult">个人中心</label>
+			</div>
+		</section>
+		<section class="personData">
+			<ul class="mui-table-view mui-table-view-chevron">
+				<li class="mui-table-view-cell mui-media">
+					<a class="mui-navigate-right" href="#">
+						<img class="mui-media-object mui-pull-left head-img" id="
+						head-img" src="{$user.userface}">
+						<label class="name">{$user.nickname}</label>
+					</a>
+				</li>
+			</ul>
+			<ul class="mui-table-view">
+				<form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+				<li class="mui-table-view-cell">
+					<a>姓名<span class="mui-pull-right"><input type="text" name="name" value="{$user.name}"></span></a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>邮件<span class="mui-pull-right"><input type="text" name="email" value="{$user.email}"></span></a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>手机号<span class="mui-pull-right"><input type="text" name="tel" value="{$user.tel}"></span></a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>性别<span class="mui-pull-right">
+						男性<input type="radio" name="sex" value="1" <if condition="$user.sex eq 1">checked="checked"</if> />   &nbsp;&nbsp;&nbsp;&nbsp;女性
+						<input type="radio" name="sex" <if condition="$user.sex eq 2">checked="checked"</if> value="2" />
+					</span></a>
+				</li>
+				<li class="mui-table-view-cell">
+					<a>部门<span class="mui-pull-right">{$user.group}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span></a>
+				</li>
+					<input type="hidden" name="userid" value="{$userid}">
+				<li class="mui-table-view-cell">
+					<input type="submit" value="提 交">
+				</li>
+				</form>
+			</ul>
+		</section>
+	</div>
+	<script src="__ROOT__/Public/Home/js/mui.min.js"></script>
+</body>
+</html>

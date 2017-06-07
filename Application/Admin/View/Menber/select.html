@@ -1,0 +1,86 @@
+
+
+
+<include file="Common/header" />
+           
+        
+        <div id="page-wrapper">
+        <div class="graphs">	  
+    <div class="content_bottom">
+     <div class="col-md-12 span_3">
+		  <div class="bs-example1" data-example-id="contextual-table">
+			  <h2>员工列表</h2>
+			  <form class="form-horizontal" action="" method="get" enctype="multipart/form-data">
+				  <div class="form-group">
+					  <label for="focusedinput" class="col-sm-2 control-label">用户名</label>
+					  <div class="col-sm-8">
+						  <input type="text" name="name" value="" class="form-control1" id="focusedinput" placeholder="">
+						  <button class="btn-success btn">Submit</button>
+					   </div>
+					  <div class="col-sm-2">
+						  <p class="help-block"></p>
+					  </div>
+				  </div>
+
+			  </form>
+		    <table class="table">
+		      <thead>
+
+		        <tr style="text-align: center;">
+
+		        </tr>
+		        <tr>
+		          <th>编号</th>
+					<th>姓名</th>
+		          <th>微信昵称</th>
+		          <th>头像</th>
+				  <th>性别</th>
+					<th>部门</th>
+		          <th>操作</th>
+		        </tr>
+		      </thead>
+		      <tbody>	      
+		      <?php 
+		      		$i = 1;
+		      	?>
+		      <foreach name="users" item='v'>
+		      
+		      	<?php 
+		      		if(($i%2)==1){
+						echo "<tr class='active'>";
+					}else{
+						echo "<tr class='info'>";
+					}
+		      	?>
+		          <th scope="row">{$v.id}</th>
+				  <th>{$v.name}</th>
+		          <th>{$v.nickname}</th>
+		          <th><img src="{$v.userface}" alt=""style="max-width:50px;max-height: 50px"></th>
+				  <th><if condition="$v.sex eq 2">女<elseif condition="$v.sex eq 1"/>男 <else/>未知</if></th>
+				  <th>{$v.group}</th>
+				  <td>
+		          <a href="__ROOT__/index.php/Admin/Menber/userupdate/id/{$v.id}">修 改</a> |
+             		<a href="javascript:if(confirm('确认删除吗?'))window.location='__ROOT__/index.php/Admin/Menber/userdelete/id/{$v.id}' ">删 除</a>
+
+				  </td>
+		        </tr>
+		      	<?php $i++ ;?>
+		       </foreach>		      
+		      </tbody>
+		    </table>
+		   </div>
+	   </div>
+		<div class="clearfix"> </div>
+	    </div>
+		<div class="copy">
+            <p>Copyright &copy; 2016  All rights reserved.</p>
+	    </div>
+		</div>
+       </div>
+      <!-- /#page-wrapper -->
+   </div>
+    <!-- /#wrapper -->
+    <!-- Bootstrap Core JavaScript -->
+    <script src="__ROOT__/Public/admin/js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>请假记录</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- loading mui -->
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/mui.min.css">
+	<!-- custorm style -->
+	<link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/style.css">
+</head>
+<body>
+<include file="Common/header" />
+	<!-- 主内容部分 -->
+	<div class="content">
+		<section class="xueqi">
+			<a href="__ROOT__/index.php/Home/User/enroll.html">
+				<div class="class">
+					<label id="classResult">点次请假</label>
+				</div>
+			</a>
+		</section>
+		<section class="rate_group">
+			<br>
+		<h3>审批记录</h3>
+			<table>
+				<tr>
+					<!--<th>id</th>-->
+					<th>起始时间</th>
+					<th>结束时间</th>
+					<th>内容</th>
+					<th>状态</th>
+				</tr>
+
+					<!--<td>嵌入式系统开发</td>-->
+					<foreach name="user" item='v'>
+						<tr>
+					<td>{$v.starttime}</td>
+					<td>{$v.endtime}</td>
+					<td>{$v.cont}</td>
+					<td><if condition="$v.state eq 2">不通过<elseif condition="$v.state eq 1"/>通过<else/>待审核</if></td>
+						</tr>
+					</foreach>
+
+			</table>
+	</div>
+	<script src="__ROOT__/Public/Home/js/mui.min.js"></script>
+</body>
+</html>

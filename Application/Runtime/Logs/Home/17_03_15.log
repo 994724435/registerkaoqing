@@ -1,0 +1,18 @@
+[ 2017-03-15T16:42:30+08:00 ] 127.0.0.1 /register/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000417s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000614s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8] Undefined index: openid D:\WWW\dev\register\Application\Home\Controller\IndexController.class.php 第 7 行.
+
+[ 2017-03-15T16:45:12+08:00 ] 127.0.0.1 /register/index.php/Home/Index/
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000913s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000785s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000890s ]
+NOTIC: [8] Undefined index: openid D:\WWW\dev\register\Application\Home\Controller\IndexController.class.php 第 7 行.
+

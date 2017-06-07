@@ -1,0 +1,481 @@
+[ 2017-03-14T13:09:22+08:00 ] 127.0.0.1 /register/index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.021667s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.015627s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.015725s ]
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Admin\Controller\CommonController.class.php 第 7 行.
+
+[ 2017-03-14T13:09:23+08:00 ] 127.0.0.1 /register/index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000540s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000870s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000991s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.020835s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.020923s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.100334s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.100454s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.014060s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.014141s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.012025s ]
+INFO: [ app_end ] --END-- [ RunTime:0.012161s ]
+
+[ 2017-03-14T13:09:26+08:00 ] 127.0.0.1 /register/index.php/Admin/User/login
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000519s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000632s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000715s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0392s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin' AND `password` = '123asd'  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000071s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000151s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.007112s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.007188s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000227s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000269s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000489s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000533s ]
+
+[ 2017-03-14T13:09:26+08:00 ] 127.0.0.1 /register/index.php/Admin/Index/main
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001085s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001024s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001242s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0055s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0011s ]
+SQL: SELECT * FROM `p_user`  [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] file_get_contents(./Public/conn/header.html): failed to open stream: No such file or directory D:\WWW\dev\register\ThinkPHP\Library\Think\Template.class.php 第 696 行.
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000122s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000185s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.174323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.174491s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000284s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000349s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000626s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000704s ]
+
+[ 2017-03-14T13:09:29+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000024s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000574s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000451s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000505s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0251s ]
+SQL: SELECT * FROM `p_message` LEFT JOIN p_menber ON p_message.userid = p_menber.id   [ RunTime:0.0286s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000133s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000216s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013026s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013159s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000574s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000749s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000826s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000924s ]
+
+[ 2017-03-14T13:09:31+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessagecontroll/id/1/state/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000020s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000536s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000892s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001004s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0012s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0105s ]
+SQL: UPDATE `p_message` SET `state`='1',`manager`='admin' WHERE `id` = 1 [ RunTime:0.0014s ]
+
+[ 2017-03-14T13:09:31+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000577s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000910s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0058s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0083s ]
+SQL: SELECT * FROM `p_message` LEFT JOIN p_menber ON p_message.userid = p_menber.id   [ RunTime:0.0016s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000108s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010867s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010934s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000279s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000481s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000534s ]
+
+[ 2017-03-14T13:09:33+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessagecontroll/id/1/state/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000014s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000353s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000426s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000479s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0069s ]
+SQL: UPDATE `p_message` SET `state`='1',`manager`='admin' WHERE `id` = 1 [ RunTime:0.0016s ]
+
+[ 2017-03-14T13:09:33+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000028s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000699s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001542s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001641s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0078s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `p_message` LEFT JOIN p_menber ON p_message.userid = p_menber.id   [ RunTime:0.0011s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000158s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.009804s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.009878s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000267s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000324s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000843s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000947s ]
+
+[ 2017-03-14T13:10:00+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000687s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000769s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000867s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0105s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0016s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0075s ]
+SQL: SELECT * FROM `p_message` LEFT JOIN p_menber ON p_message.userid = p_menber.id   [ RunTime:0.0022s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000105s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000163s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011027s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011109s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000235s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000280s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000616s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000693s ]
+
+[ 2017-03-14T13:10:07+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessagecontroll/state/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000393s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000797s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000973s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0022s ]
+NOTIC: [8] Undefined index: id D:\WWW\dev\register\Application\Admin\Controller\MenberController.class.php 第 53 行.
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000594s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000646s ]
+
+[ 2017-03-14T13:10:39+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000053s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000694s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000568s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000632s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0060s ]
+SQL: SELECT * FROM `p_message` LEFT JOIN p_menber ON p_message.userid = p_menber.id   [ RunTime:0.0015s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000208s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000356s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011614s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011718s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000294s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000351s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000560s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000626s ]
+
+[ 2017-03-14T13:11:27+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000031s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000944s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001085s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001202s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0094s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0015s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0090s ]
+SQL: SELECT * FROM `p_message` LEFT JOIN p_menber ON p_message.userid = p_menber.id   [ RunTime:0.0025s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000109s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000172s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011502s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011568s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000313s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000361s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000549s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+
+[ 2017-03-14T13:11:59+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000018s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000438s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000658s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000746s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0082s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `p_message` LEFT JOIN p_menber ON p_message.userid = p_menber.id   [ RunTime:0.0035s ]
+
+[ 2017-03-14T13:12:01+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000022s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000559s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000884s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000981s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0073s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0013s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `p_message` LEFT JOIN p_menber ON p_message.userid = p_menber.id   [ RunTime:0.0017s ]
+
+[ 2017-03-14T13:16:07+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000660s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000731s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0069s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0055s ]
+ERR: 1066:Not unique table/alias: 'p_message'
+ [ SQL语句 ] : SELECT * FROM `p_message` LEFT JOIN p_message ON p_menber.id = p_menber.userid  
+ERR: 1066:Not unique table/alias: 'p_message'
+ [ SQL语句 ] : SELECT * FROM `p_message` LEFT JOIN p_message ON p_menber.id = p_menber.userid  
+
+[ 2017-03-14T13:16:17+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000015s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000446s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000524s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000576s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0074s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0065s ]
+ERR: 1066:Not unique table/alias: 'p_message'
+ [ SQL语句 ] : SELECT * FROM `p_message` LEFT JOIN p_message ON p_menber.id = p_menber.userid  
+ERR: 1066:Not unique table/alias: 'p_message'
+ [ SQL语句 ] : SELECT * FROM `p_message` LEFT JOIN p_message ON p_menber.id = p_menber.userid  
+
+[ 2017-03-14T13:16:31+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000023s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000588s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000607s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000669s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0067s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0008s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0060s ]
+ERR: 1066:Not unique table/alias: 'p_message'
+ [ SQL语句 ] : SELECT * FROM `p_message` right JOIN p_message ON p_menber.id = p_menber.userid  
+ERR: 1066:Not unique table/alias: 'p_message'
+ [ SQL语句 ] : SELECT * FROM `p_message` right JOIN p_message ON p_menber.id = p_menber.userid  
+
+[ 2017-03-14T13:20:47+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000430s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000488s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000543s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0072s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0017s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0076s ]
+SQL: SELECT * FROM `p_message`  [ RunTime:0.0018s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000107s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000166s ]
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011737s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011819s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000407s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000458s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001724s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001886s ]
+
+[ 2017-03-14T13:21:04+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessagecontroll/id/2/state/1
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000033s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000612s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000495s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000558s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0100s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0009s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0074s ]
+SQL: UPDATE `p_message` SET `state`='1',`manager`='admin' WHERE `id` = 2 [ RunTime:0.0010s ]
+
+[ 2017-03-14T13:21:04+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000026s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000721s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000594s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000685s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0011s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0077s ]
+SQL: SELECT * FROM `p_message`  [ RunTime:0.0012s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000131s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000207s ]
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.011278s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.011355s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000292s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000338s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000884s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000978s ]
+
+[ 2017-03-14T13:21:07+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessagecontroll/id/3/state/2
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000016s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000500s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000449s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000502s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0089s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0019s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0069s ]
+SQL: UPDATE `p_message` SET `state`='2',`manager`='admin' WHERE `id` = 3 [ RunTime:0.0029s ]
+
+[ 2017-03-14T13:21:07+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000025s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000575s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000854s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000965s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0092s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0021s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0064s ]
+SQL: SELECT * FROM `p_message`  [ RunTime:0.0014s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000116s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000174s ]
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: nickname D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 135 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.010775s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.010837s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000234s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000275s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000633s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000701s ]
+
+[ 2017-03-14T13:40:26+08:00 ] 127.0.0.1 /register/index.php/Admin/Menber/usermessage
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000021s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000602s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000724s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000811s ]
+SQL: SHOW COLUMNS FROM `p_user` [ RunTime:0.0063s ]
+SQL: SELECT * FROM `p_user` WHERE `name` = 'admin'  [ RunTime:0.0014s ]
+SQL: SHOW COLUMNS FROM `p_message` [ RunTime:0.0096s ]
+SQL: SELECT * FROM `p_message` ORDER BY state asc  [ RunTime:0.0021s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000104s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000164s ]
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+NOTIC: [8] Undefined index: name D:\WWW\dev\register\Application\Runtime\Cache\Admin\0302b34ac6a229738bc4d0ed6272330a.php 第 134 行.
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.013375s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.013436s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000302s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000346s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000553s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000605s ]
+

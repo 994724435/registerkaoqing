@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>系 统 主 页</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- loading mui -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/mui.min.css">
+    <!-- loading picker -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/mui.picker.min.css"> -->
+    <!-- loading popicker -->
+    <!-- <link rel="stylesheet" type="text/css" href="css/mui.poppicker.css"> -->
+    <!-- custorm style -->
+    <link rel="stylesheet" type="text/css" href="__ROOT__/Public/Home/css/style.css">
+</head>
+<body>
+<!-- 导航栏 -->
+
+<include file="Common/header" />
+<!-- 主内容部分 -->
+<div class="content">
+    <section class="xueqi">
+        <div class="class">
+            <label id="classResult">主 页</label>
+        </div>
+    </section>
+
+    <section class="query">
+        <table>
+            <tr>
+                <td>
+                    <a href="__ROOT__/index.php/Home/User/record.html">
+                        <img src="__ROOT__/Public/Home/images/timetable.png">
+                        <p>考勤记录</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="__ROOT__/index.php/Home/User/personCenter.html">
+                        <img src="__ROOT__/Public/Home/images/classroom.png">
+                        <p>个人中心</p>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="__ROOT__/index.php/Home/User/leave.html">
+                        <img src="__ROOT__/Public/Home/images/keshi.png">
+                        <p>我要请假</p>
+                    </a>
+                </td>
+                <td>
+                    <a href="__ROOT__/index.php/Home/User/clock.html">
+                        <img src="__ROOT__/Public/Home/images/chengji.png">
+                        <p>上班打卡</p>
+                    </a>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <a href="__ROOT__/index.php/Home/User/appeallist">
+                        <img src="__ROOT__/Public/Home/images/room.png">
+                        <p>考勤申诉</p>
+                    </a>
+                </td>
+            </tr>
+        </table>
+    </section>
+</div>
+<script src="__ROOT__/Public/Home/js/mui.min.js"></script>
+<script src="http://res.wx.qq.com/open/js/jweixin-1.0.0.js"></script>
+<script type="text/javascript">
+    wx.config({
+        debug: true,
+        appId: '<?php echo $signPackage["appId"];?>',
+        timestamp: <?php echo $signPackage["timestamp"];?>,
+    nonceStr: '<?php echo $signPackage["nonceStr"];?>',
+            signature: '<?php echo $signPackage["signature"];?>',
+            jsApiList: [
+        'checkJsApi',
+        'openLocation',
+        'getLocation'
+    ]
+    });
+    wx.ready(function () {
+// 获取当前地理位置
+            wx.getLocation({
+                success: function (res) {
+                    var latitude = res.latitude; // 纬度，浮点数，范围为90 ~ -90
+                    var longitude = res.longitude; // 经度，浮点数，范围为180 ~ -180。
+                    var speed = res.speed; // 速度，以米/每秒计
+                    var accuracy = res.accuracy; // 位置精度
+                    alert(JSON.stringify(res));
+                },
+                cancel: function (res) {
+                    alert('用户拒绝授权获取地理位置');
+                }
+            });
+
+    });
+</script>
+</body>
+</html>
